@@ -1,0 +1,34 @@
+{
+  "name": "vue-electron",
+  "version": "1.0.0",
+  "description": "Example Vue app in Electron shell",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"poi\" \"sleep 10 && electron .\"",
+    "test": "poi test",
+    "build": "npm run clean && npm run compile && npm run package:linux && npm run package:windows && npm run package:darwin",
+    "clean": "rm -rf dist vue-electron-*",
+    "compile": "poi build --no-clear",
+    "poi": "poi",
+    "electron": "electron",
+    "electron-packager": "electron-packager",
+    "package": "electron-packager . --ignore=\"src|poi.config.js|.gitignore\"",
+    "package:linux": "npm run package -- --platform=linux",
+    "package:windows": "npm run package -- --platform=win32 --arch=all",
+    "package:darwin": "npm run package -- --platform=darwin"
+  },
+  "author": "Matthias Hryniszak",
+  "license": "ISC",
+  "dependencies": {
+    "electron-is-dev": "^0.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "electron": "^1.7.10",
+    "electron-packager": "^10.1.1",
+    "node-sass": "^4.7.2",
+    "poi": "^9.6.12",
+    "sass-loader": "^6.0.6",
+    "vue-class-component": "^6.1.2"
+  }
+}
