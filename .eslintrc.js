@@ -22,6 +22,7 @@ module.exports = {
     'comma-dangle': [ 'error', 'always-multiline' ],
     'no-console': mode,
     'no-debugger': mode,
+    'no-alert': mode,
     'no-var': 'error',
     'one-var': [ 'error', 'never' ],
     'space-before-function-paren': [ 'error', {
@@ -49,6 +50,7 @@ module.exports = {
     'consistent-return': [ 'error', { 'treatUndefinedAsUnspecified': true } ],
     'valid-jsdoc': 'error',
     'eqeqeq': 'error',
+    'no-return-assign': [ 'error', 'always' ],
     'vue/max-attributes-per-line': [ 'error', {
       singleline: 5,
       multiline: { max: 5, 'allowFirstLine': true },
