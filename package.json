@@ -18,7 +18,7 @@
     "package:darwin": "npm run package -- --platform=darwin"
   },
   "author": "Matthias Hryniszak",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "electron-is-dev": "^0.3.0"
   },
