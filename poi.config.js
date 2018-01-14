@@ -5,4 +5,7 @@ module.exports = {
     return config
   },
   homepage: './',
+  presets: [
+    require('poi-preset-eslint')({ mode: '*' }),
+  ],
 }

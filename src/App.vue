@@ -8,7 +8,10 @@ import Component from 'vue-class-component'
 
 @Component
 export default class App extends Vue {
-  message = "Hello, world!"
+  message = 'Hello, world!'
+
+  created () {
+  }
 }
 </script>
 

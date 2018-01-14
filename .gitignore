@@ -2,3 +2,4 @@ node_modules
 dist
 vue-electron-*
 
+package-lock.json
