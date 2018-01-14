@@ -10,10 +10,23 @@ module.exports = {
   extends: [ 'eslint:recommended', 'plugin:vue/recommended' ],
 
   rules: {
+    'camelcase': [ 'error', { 'properties': 'always' } ],
+    'func-name-matching': 'error',
+    'func-names': [ 'error', 'never' ],
+    'object-shorthand': [ 'error', 'always' ],
+    'prefer-const': 'error',
+    'prefer-template': 'error',
+    'template-curly-spacing': [ 'error', 'never' ],
+    'no-useless-rename': 'error',
+    'no-useless-constructor': 'error',
     'arrow-spacing': [ 'error', {
       'before': true,
       'after': true,
     } ],
+    'arrow-parens': [ 'error', 'as-needed' ],
+    'arrow-body-style': [ 'error', 'as-needed' ],
+    'no-const-assign': 'error',
+    'prefer-numeric-literals': 'error',
     'indent': [ 'error', 2, {
       'SwitchCase': 1,
     } ],
