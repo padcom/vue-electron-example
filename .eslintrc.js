@@ -12,10 +12,10 @@ module.exports = {
   rules: {
     'arrow-spacing': [ 'error', {
       'before': true,
-      'after': true 
+      'after': true,
     } ],
     'indent': [ 'error', 2, {
-      'SwitchCase': 1
+      'SwitchCase': 1,
     } ],
     'semi': [ 'error', 'never' ],
     'quotes': [ 'error', 'single' ],
@@ -27,11 +27,18 @@ module.exports = {
     'space-before-function-paren': [ 'error', {
       'anonymous': 'never',
       'named': 'always',
-      'asyncArrow': 'always'
+      'asyncArrow': 'always',
     }],
+    'object-curly-spacing': [ 'error', 'always' ],
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'computed-property-spacing': [ 'error', 'always' ],
+    'key-spacing': [ 'error', {
+      'beforeColon': false,
+      'afterColon': true,
+    } ],
     'vue/max-attributes-per-line': [ 'error', {
       singleline: 5,
-      multiline: { max: 5, 'allowFirstLine': true }
+      multiline: { max: 5, 'allowFirstLine': true },
     } ],
     'vue/html-indent': [ 'none' ],
     'vue/attribute-hyphenation': [ 'error', 'never' ],
