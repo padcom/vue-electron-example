@@ -46,6 +46,9 @@ module.exports = {
     'no-multiple-empty-lines': [ 'error', { 'max': 1 } ],
     'dot-location': [ 'error', 'property' ],
     'getter-return': 'error',
+    'consistent-return': [ 'error', { 'treatUndefinedAsUnspecified': true } ],
+    'valid-jsdoc': 'error',
+    'eqeqeq': 'error',
     'vue/max-attributes-per-line': [ 'error', {
       singleline: 5,
       multiline: { max: 5, 'allowFirstLine': true },
