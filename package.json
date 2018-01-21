@@ -10,6 +10,7 @@
     "clean": "rm -rf dist $npm_package_name-*",
     "compile": "poi build --no-clear",
     "poi": "poi",
+    "eslint": "eslint",
     "electron": "electron",
     "electron-packager": "electron-packager",
     "package": "electron-packager . --ignore=\"src|poi.config.js|.gitignore\"",
@@ -28,11 +29,16 @@
     "electron": "^1.7.10",
     "electron-packager": "^10.1.1",
     "eslint": "^4.15.0",
-    "eslint-plugin-vue": "^4.2.0",
+    "eslint-config-aplaline": "git+https://github.com/aplaline/eslint-config-aplaline#1.4.0",
     "node-sass": "^4.7.2",
     "poi": "^9.6.12",
     "poi-preset-eslint": "^9.1.1",
     "sass-loader": "^6.0.6",
     "vue-class-component": "^6.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-aplaline"
+    ]
   }
 }

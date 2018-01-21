@@ -12,6 +12,16 @@ export default class App extends Vue {
   message = `Hello, world! ${this.number}`
 
   created () {
+    this.created()
+    let a = 1
+    if (a === 2) {
+      window.addEventListener('test', () => {
+        a = 4
+      })
+      a = 2
+    } else {
+      a = 3
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 module.exports = {
   entry: './src/index',
-  webpack(config) {
+  webpack (config) {
     config.target = 'electron-renderer'
     return config
   },
